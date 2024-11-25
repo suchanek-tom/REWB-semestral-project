@@ -1,62 +1,16 @@
 import { Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
     <>
       <Container className="my-5">
         <footer className="text-center text-lg-start text-white bg-secondary p-4">
-          {/* <section className="d-flex justify-content-between p-4">
-            <div className="me-5">
-              <span>Connect with us on social media:</span>
-            </div>
-
-            <div>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                className="text-white me-4"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                className="text-white me-4"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                className="text-white me-4"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                className="text-white me-4"
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="https://www.github.com"
-                target="_blank"
-                className="text-white me-4"
-              >
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
-          </section> */}
-
           <section>
             <div className="container text-center text-md-start mt-5">
               <div className="row mt-3">
-                {/* Company Section */}
                 <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">
-                    Mountain Adventures
-                  </h6>
+                  <h6 className="text-uppercase fw-bold">Climbing page</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                   <p>
                     Explore, experience, and share the thrill of mountaineering.
@@ -67,58 +21,67 @@ export const Footer = () => {
 
                 {/* Products Section */}
                 <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">Resources</h6>
+                  <h6 className="text-uppercase fw-bold">Popular brands</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                   <p>
-                    <a href="#!" className="text-white">
-                      Mountain Gear
+                    <a
+                      href="https://www.thenorthface.cz/cs-cz"
+                      className="text-white"
+                    >
+                      The North Face
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Climbing Guides
+                    <a
+                      href="https://www.petzl.com/INT/en"
+                      className="text-white"
+                    >
+                      Petzl
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Training Tips
+                    <a href="https://www.hudy.cz/" className="text-white">
+                      HUDY Sport
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Safety Practices
+                    <a href="https://www.rockpoint.cz/" className="text-white">
+                      Rock Point
                     </a>
                   </p>
                 </div>
 
-                {/* Useful Links Section */}
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold">Quick Links</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                   <p>
-                    <a href="#!" className="text-white">
-                      Your Profile
-                    </a>
+                    <NavLink to="/" className="text-white">
+                      Home
+                    </NavLink>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Join Our Community
-                    </a>
+                    <NavLink to="/about" className="text-white">
+                      About
+                    </NavLink>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Event Schedule
-                    </a>
+                    <NavLink to="/highest-mountains" className="text-white">
+                      Highest mountains
+                    </NavLink>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Support
-                    </a>
+                    <NavLink to="gallery" className="text-white">
+                      Galerry
+                    </NavLink>
+                  </p>
+                  <p>
+                    <NavLink to="contact" className="text-white">
+                      Contact
+                    </NavLink>
                   </p>
                 </div>
 
-                {/* Contact Section */}
-                <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div className="col-md-s  4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <h6 className="text-uppercase fw-bold">Contact</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" />
                   <p>
@@ -126,21 +89,29 @@ export const Footer = () => {
                     CO 80203, USA
                   </p>
                   <p>
-                    <i className="fas fa-envelope mr-3"></i>{" "}
-                    info@mountainadventures.com
+                    Email:{" "}
+                    <a href="mailto:climbing@outlook" className="text-white">
+                      climbing@outlook.com
+                    </a>
                   </p>
                   <p>
-                    <i className="fas fa-phone mr-3"></i> +1 303 555 0167
+                    <a href="tel:+420123345999" className="text-white">
+                      +420 123 345 999
+                    </a>
                   </p>
                   <p>
-                    <i className="fas fa-print mr-3"></i> +1 303 555 0168
+                    <a href="tel:+420123123000" className="text-white">
+                      +420 123 123 000
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          <div className="text-center p-3">© 2024 Mountain Adventures</div>
+          <div className="text-center p-3">
+            © 2024 Climbing page. Made by Tomáš Suchanek (23171)
+          </div>
         </footer>
       </Container>
     </>
