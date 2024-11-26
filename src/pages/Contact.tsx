@@ -93,7 +93,7 @@ export const Contact = () => {
             />
           </Form.Group>
 
-          <Button variant="secondary" type="submit">
+          <Button variant="success" type="submit">
             Submit
           </Button>
         </Form>

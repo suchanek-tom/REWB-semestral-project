@@ -66,7 +66,7 @@ const Home = () => {
         <section ref={sectionRef} className="py-5">
           <h2 className="text-center">Explore More Actions</h2>
           <div className="text-center">
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="success" onClick={handleShow}>
               Learn More
             </Button>
             <Button variant="secondary" className="ms-3">
