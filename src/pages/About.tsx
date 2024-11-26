@@ -86,7 +86,7 @@ const About: React.FC = () => {
           <Row className="g-3">
             <Col xs={12} md={4}>
               <Image
-                src="https://cdn.pixabay.com/photo/2021/08/14/04/15/mountains-6544522_1280.jpg"
+                src="https://cdn.pixabay.com/photo/2019/01/26/19/44/zakopane-3956852_1280.jpg"
                 alt="Mountain View 1"
                 className="img-fluid rounded"
               />
@@ -100,7 +100,7 @@ const About: React.FC = () => {
             </Col>
             <Col xs={12} md={4}>
               <Image
-                src="https://cdn.pixabay.com/photo/2021/08/14/04/15/mountains-6544522_1280.jpg"
+                src="https://cdn.pixabay.com/photo/2019/07/14/21/03/piz-boe-4338086_1280.jpg"
                 alt="Mountain View 3"
                 className="img-fluid rounded"
               />
