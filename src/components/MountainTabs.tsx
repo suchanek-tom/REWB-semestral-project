@@ -62,7 +62,7 @@ const MountainTabs = () => {
             <img
               src="https://cdn.pixabay.com/photo/2016/02/14/12/59/everest-1199431_1280.jpg"
               alt="Himalayas"
-              className="img mb-3 rounded shadow"
+              className="img-fluid mb-3 rounded shadow"
               style={{ maxHeight: "300px" }}
             />
           </div>
