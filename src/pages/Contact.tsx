@@ -20,9 +20,11 @@ export const Contact = () => {
         <h2>Contact Form</h2>
 
         <Breadcrumb className="my-2">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="./">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="./about">About</Breadcrumb.Item>
-          <Breadcrumb.Item href="./services">Services</Breadcrumb.Item>
+          <Breadcrumb.Item href="./highest-mountains">
+            Highest Mountains
+          </Breadcrumb.Item>
           <Breadcrumb.Item href="./gallery">Gallery</Breadcrumb.Item>
           <Breadcrumb.Item active>Contact</Breadcrumb.Item>
         </Breadcrumb>

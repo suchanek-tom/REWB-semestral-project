@@ -43,10 +43,12 @@ const About: React.FC = () => {
 
         {/* Breadcrumbs */}
         <div className="container mt-2 mb-4">
-          <Breadcrumb>
+          <Breadcrumb className="my-2">
             <Breadcrumb.Item href="./">Home</Breadcrumb.Item>
             <Breadcrumb.Item active>About</Breadcrumb.Item>
-            <Breadcrumb.Item href="./services">Services</Breadcrumb.Item>
+            <Breadcrumb.Item href="./highest-mountains">
+              Highest Mountains
+            </Breadcrumb.Item>
             <Breadcrumb.Item href="./gallery">Gallery</Breadcrumb.Item>
             <Breadcrumb.Item href="./contact">Contact</Breadcrumb.Item>
           </Breadcrumb>

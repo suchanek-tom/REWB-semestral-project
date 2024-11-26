@@ -1,3 +1,4 @@
+import { Breadcrumb } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
 const Gallery = () => {
@@ -11,6 +12,15 @@ const Gallery = () => {
         <header className="d-flex flex-column align-items-center py-3">
           <h1>Galerie</h1>
         </header>
+        <Breadcrumb className="my-2 container">
+          <Breadcrumb.Item href="./">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="./about">About</Breadcrumb.Item>
+          <Breadcrumb.Item href="./highest-mountains">
+            Highest Mountains
+          </Breadcrumb.Item>
+          <Breadcrumb.Item active>Gallery</Breadcrumb.Item>
+          <Breadcrumb.Item href="./contact">Contact</Breadcrumb.Item>
+        </Breadcrumb>
         <div className="row">
           <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
             <a

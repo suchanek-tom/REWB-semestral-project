@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import $ from "jquery";
 import "datatables.net";
+import { Breadcrumb } from "react-bootstrap";
 
 export const HighestMountains = () => {
   const mountains = [
@@ -108,6 +109,14 @@ export const HighestMountains = () => {
         <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
       </Helmet>
       <div className="container">
+        <Breadcrumb className="my-2 container">
+          <Breadcrumb.Item href="./">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="./about">About</Breadcrumb.Item>
+          <Breadcrumb.Item active>Highest Mountains</Breadcrumb.Item>
+          <Breadcrumb.Item href="./gallery">Gallery</Breadcrumb.Item>
+          <Breadcrumb.Item href="./contact">Contact</Breadcrumb.Item>
+        </Breadcrumb>
+
         <section>
           <h2 className="text-center font-weight-bold my-4">
             50 Highest Mountains in the World

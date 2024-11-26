@@ -52,10 +52,12 @@ const Home = () => {
         </header>
 
         {/* Breadcrumbs */}
-        <Breadcrumb className="my-2">
+        <Breadcrumb className="my-2 container">
           <Breadcrumb.Item active>Home</Breadcrumb.Item>
           <Breadcrumb.Item href="./about">About</Breadcrumb.Item>
-          <Breadcrumb.Item href="./services">Services</Breadcrumb.Item>
+          <Breadcrumb.Item href="./highest-mountains">
+            Highest mountains
+          </Breadcrumb.Item>
           <Breadcrumb.Item href="./gallery">Gallery</Breadcrumb.Item>
           <Breadcrumb.Item href="./contact">Contact</Breadcrumb.Item>
         </Breadcrumb>
