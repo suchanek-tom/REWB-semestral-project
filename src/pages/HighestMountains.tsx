@@ -109,7 +109,7 @@ export const HighestMountains = () => {
         <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
       </Helmet>
       <div className="container">
-        <Breadcrumb className="my-2 container">
+        <Breadcrumb className="my-2">
           <Breadcrumb.Item href="./">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="./about">About</Breadcrumb.Item>
           <Breadcrumb.Item active>Highest Mountains</Breadcrumb.Item>
@@ -123,7 +123,7 @@ export const HighestMountains = () => {
           </h2>
           <table
             id="mountainsTable"
-            className="table table-striped table-bordered table-hover"
+            className="table table-striped table-bordered table-hovers"
           >
             <thead>
               <tr>
